@@ -1,0 +1,71 @@
+@font-face { 
+  font-family: Hacked-KerX; 
+  src: url('../fonts/Hacked-KerX.ttf');
+}
+
+@font-face { 
+  font-family: FriendlyStranger; 
+  src: url('../fonts/FriendlyStranger-VGp76.otf');
+}
+
+@font-face { 
+  font-family: Nunito; 
+  src: url('../fonts/Nunito-Regular.ttf');
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: #000;
+
+  color: #fff;
+  font-family: sans-serif;
+}
+
+header {
+  height: 64px;
+
+  padding: 0 24px 0 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  background: linear-gradient(-30deg,rgba(29,96,28,1), rgba(0,0,0,1), rgba(79,28,96,1));
+}
+
+a {
+  color: #fff;
+  font-family: Nunito, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+
+  margin-right: 12px;
+/*   
+  &:hover {
+    filter: brightness(80%);
+  } */
+}
+
+h2 {
+  font-family: Hacked-KerX, sans-serif;
+}
+
+footer {
+  height: 120px;
+  padding: 0 24px 0 24px;
+  margin-top: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  background: linear-gradient(-30deg,rgba(29,96,28,1), rgba(0,0,0,1), rgba(79,28,96,1));
+}
+
+.container {
+  height: 100%;
+}

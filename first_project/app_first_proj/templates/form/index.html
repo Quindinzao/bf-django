@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css/global.css' %}">
+  <link rel="stylesheet" href="{% static 'css/form/styles.css' %}">
+  <title>Comprar ingressos</title>
+</head>
+<body>
+  <header>
+    <h2>COMPUTARIA</h2>
+    <nav>
+      <a href="../home/index.html">Home</a>
+      <a href="#">Form</a>
+      <a href="../data/index.html">Data</a>
+    </nav>
+  </header> 
+  <div class="container">
+    <h2>Ingressos</h2>
+    <form class="content" method="post" action="{% url 'data' %}">
+      {% csrf_token %}
+      <input name="name" type="text" placeholder="Nome" />
+      <input name="last_name" type="text" placeholder="Sobrenome" />
+      <input name="years_old" type="number" placeholder="Idade" />
+      <input name="email" type="email" placeholder="E-mail" />
+      <input name="cpf" type="number" placeholder="CPF" />
+      <input name="card_number" type="number" placeholder="Número do cartão" />
+      <input name="cvv" type="number" placeholder="CVV" />
+      <button type="submit">COMPRAR</button>
+    </form>
+  </div>
+  <footer>
+    All rigths to João Victor Fernandes
+  </footer> 
+</body>
+</html>

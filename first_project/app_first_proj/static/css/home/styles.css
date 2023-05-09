@@ -1,0 +1,19 @@
+.content {
+  margin-top: 24px;
+  padding: 0 24px 0 24px;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+}
+
+.block {
+  width: 50%;
+
+  display: flex;
+}
+
+.right {
+  justify-content: flex-end;
+}

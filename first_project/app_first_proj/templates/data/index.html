@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css/global.css' %}">
+  <link rel="stylesheet" href="{% static 'css/data/styles.css' %}">
+  <title>Ingresso</title>
+</head>
+<body>
+  <header>
+    <h2>COMPUTARIA</h2>
+    <nav>
+      <a href="../home/index.html">Home</a>
+      <a href="../form/index.html">Form</a>
+      <a href="#">Data</a>
+    </nav>
+  </header>
+  {% for ticket in tickets %}
+  <div class="container">
+    <div>  
+      <h2>Ingresso</h2>
+      <p>Nome: {{ticket.name}} {{ticket.last_name}}</p>
+      <p>Idade: {{ticket.years_old}}</p>
+      <p>E-mail: {{ticket.email}}</p>
+      <p>CPF: {{ticket.cpf}}</p>
+    </div>
+    <div></div>
+  </div>
+  {% endfor %}
+  <footer>
+    All rigths to João Victor Fernandes
+  </footer> 
+</body>
+</html>
